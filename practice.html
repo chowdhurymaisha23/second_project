@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hover Effect For Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    .project-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .third-one-img{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        overflow: hidden;
+    }
+
+    .third-one-img img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+
+    .third-one-img:hover img {
+        transform: scale(1.2);
+    }
+
+.img-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: rgb(205, 28, 28);
+
+    width: 100%;
+    padding: 10px;
+ 
+    transition: 0.5s;
+}
+
+.form-of-message-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.message-box {
+    width: 300px;
+    height: 150px;
+    border: 2px solid #333;
+    padding: 10px;
+    resize: both;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.main-image {
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+
+.social-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.container:hover .social-icons {
+    opacity: 1;
+}
+
+.icon {
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Optional: Add specific colors for each social media */
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.twitter {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.instagram {
+    background-color: #e4405f;
+    color: #fff;
+}
+
+
+    
+    </style>
+</head>
+<body>
+
+<div class="project-images">
+    <div class="third-one-img">
+        <img src="./p3.jpg" alt="">
+    </div>
+    <div class="img-content">
+        <h1>Digital Project</h1>
+        <h4>Business</h4>
+    </div>
+</div>
+
+
+<div class="form-of-message-box">
+    <div class="message-box">
+        <input type="text" name="Message" placeholder="Write Your Message">
+      </div>
+ </div>
+
+
+
+ <div class="container">
+    <img src="./t1.png" alt="Your Image" class="main-image">
+    <div class="social-icons">
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
